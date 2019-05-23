@@ -1,0 +1,47 @@
+body{margin:0; padding:0; font-family:Century Gothic;}
+nav  {position:fixed; background-color:rgba(0,0,0,0.5); width:100%; box-sizing:border-box; z-index:1000;}
+.navbar ul{list-style:none; display:inline-flex; z-index:200; float:right; line-height:2;}
+.navbar ul li {list-style:none;}
+.navbar ul li a {text-decoration:none; color:white; padding:0px 20px;}
+.navbar li a:hover{background-color:black; padding:20px 20px;}
+.navbar .brand{ display:inline-flex; z-index:200; float:left;}
+.navbar .brand a{ text-decoration:none; padding:15px 20px; color:white; font-size:150%; }
+.menu_hide{padding:2% 3%; display:none;}
+.menu_hide img{width:5%; height:5%;}
+.background{background-image:url("../image/bg.jpg"); background-color:white; background-position:center;background-repeat:no-repeat; background-size:cover; background-attachment:fixed; width:100%; height:100%;}
+.title_header{display:relative; padding:15% 15% 10% 35%; }
+.title_header h1{font-size:800%; color:white; padding:0%;margin:0;}
+.title_header h2{color:white; padding:0%; }
+.about{margin:0% 15% 15% 15%; padding:5%; height:50%;}
+.about_title {text-align:center; font-size:150%;}
+.about p{text-align:justify;}
+.gallery{ margin:30% 20%;}
+.gallery_title {text-align:center; font-size:150%; direction:rtl;}
+.gallery_wrapper{margin:1%; position:relative; height:30%;} 
+.gallery_wrapper table{width:100%}
+.gallery_wrapper img{width:100%;}
+.gallery_caption {background-color:black; position:absolute; width:32%;}
+.gallery_caption p{color:white;}
+
+/*Gallery CAPTION*/
+.caption {position: relative;overflow: hidden;  width:100%;}
+.caption__overlay {position: absolute;top: 0;right: 0;bottom: 0;left: 0;padding: 10px; width:100%; color: white;transform: translateY(100%);transition: transform .35s ease-out;background: rgb(0, 0, 0);background: rgba(0, 0, 0, 0.7);}
+.caption:hover .caption__overlay {transform: translateY(0);}
+.caption__overlay__content{color:#ffffff;}
+
+@media(max-width:500px){
+	.title_header{position:absolute;}
+	.title_header h1 {font-size:800%;}
+	.title_header h2 {font-size:140%;}
+	.title_header{position:relative; }
+	.title_header h1 {font-size:800%; }
+	.title_header h2 {font-size:140%; }
+	.about_title h1{font-size:180%;}
+}
+
+@media(max-width:768px){
+	.title_header{position:relative; padding:22% 0% 5% 28%; margin:0;}
+	.title_header h1 {font-size:800%;}
+	.title_header h2 {font-size:140%;}
+	.about_title{font-size:100%;}
+}
